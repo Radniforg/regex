@@ -74,6 +74,6 @@ for contacts in contacts_list[1:]:
 
 clean_list = duplicate_deletion(contacts_list)
 
-with open("phonebook.csv", "w") as f:
+with open("phonebook.csv", "w", newline = '') as f:
   datawriter = csv.writer(f, delimiter=',')
   datawriter.writerows(clean_list)
