@@ -65,7 +65,7 @@ def duplicate_deletion(contact_list):
 with open('phonebook_raw.csv') as f:
     rows = csv.reader(f, delimiter=',')
     contacts_list = list(rows)
-# pprint(contacts_list)
+pprint(contacts_list)
 
 for contacts in contacts_list[1:]:
     new_name_list = LFS(contacts[:3])
